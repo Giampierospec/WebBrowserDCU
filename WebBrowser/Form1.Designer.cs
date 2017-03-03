@@ -137,6 +137,7 @@
             this.webBrows.Name = "webBrows";
             this.webBrows.Size = new System.Drawing.Size(935, 530);
             this.webBrows.TabIndex = 2;
+            this.webBrows.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrows_DocumentCompleted);
             // 
             // Browser
             // 

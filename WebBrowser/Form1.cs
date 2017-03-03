@@ -14,7 +14,9 @@ namespace WebBrowser
     {
         public Browser()
         {
+
             InitializeComponent();
+            disableStuff();
             searchBar.Text = "google.com";
             webBrows.Navigate("google.com");
         }
@@ -52,6 +54,7 @@ namespace WebBrowser
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
+            disableStuff();
             string WebPage = searchBar.Text.Trim();
             webBrows.Navigate(WebPage);
         }
@@ -62,9 +65,21 @@ namespace WebBrowser
         {
             if(e.KeyCode == Keys.Enter)
             {
+                disableStuff();
                 string webPage = searchBar.Text.Trim();
                 webBrows.Navigate(webPage);
             }
+        }
+
+        private void webBrows_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            searchBar.Enabled = true;
+            toolStripButton6.Enabled = true;
+        }
+        private void disableStuff()
+        {
+            searchBar.Enabled = false;
+            toolStripButton6.Enabled = false;
         }
     }
 }
