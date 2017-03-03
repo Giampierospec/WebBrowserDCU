@@ -40,6 +40,7 @@ namespace WebBrowser
         {
             if (webBrows.CanGoBack)
             {
+                PageUrl();
                 webBrows.GoBack();
             }
         }
@@ -51,6 +52,7 @@ namespace WebBrowser
         {
             if (webBrows.CanGoForward)
             {
+                PageUrl();
                 webBrows.GoForward();
             }
         }
