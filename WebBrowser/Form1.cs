@@ -103,24 +103,23 @@ namespace WebBrowser
         {
             searchBar.Enabled = true;
             toolStripButton6.Enabled = true;
-            if (webBrows.Url != null)
-            {
-                searchBar.Text = webBrows.Url.AbsoluteUri;
-            }
+            PageUrl();
+            
         }
         /// <summary>
-        /// Dsiables some buttons on page loading
+        /// Disables some buttons on page loading
         /// </summary>
         private void disableStuff()
         {
             searchBar.Enabled = false;
             toolStripButton6.Enabled = false;
         }
-
-        private void webBrows_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        private void PageUrl()
         {
-            
-            
+            if (webBrows.Url != null)
+            {
+                searchBar.Text = webBrows.Url.AbsoluteUri;
+            }
         }
     }
 }
