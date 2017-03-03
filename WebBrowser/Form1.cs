@@ -15,27 +15,16 @@ namespace WebBrowser
         public Browser()
         {
             InitializeComponent();
+            searchBar.Text = "google.com";
+            webBrows.Navigate("google.com");
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void homeBtn_Click(object sender, EventArgs e)
         {
-            if (webBrows.CanGoForward)
-            {
-                webBrows.GoForward();
-            }
+            webBrows.Navigate("google.com");
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            webBrows.Stop();
-        }
-
-        private void home_Click(object sender, EventArgs e)
-        {
-            webBrows.GoHome();
-        }
-
-        private void back_Click(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
         {
             if (webBrows.CanGoBack)
             {
@@ -43,15 +32,39 @@ namespace WebBrowser
             }
         }
 
-        private void refresh_Click(object sender, EventArgs e)
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            if (webBrows.CanGoForward)
+            {
+                webBrows.GoForward();
+            }
+        }
+
+        private void refreshBtn_Click(object sender, EventArgs e)
         {
             webBrows.Refresh();
         }
 
-        private void go_Click(object sender, EventArgs e)
+        private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            string WebPage = textBox1.Text.Trim();
+            webBrows.Stop();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            string WebPage = searchBar.Text.Trim();
             webBrows.Navigate(WebPage);
+        }
+
+        
+
+        private void searchBar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                string webPage = searchBar.Text.Trim();
+                webBrows.Navigate(webPage);
+            }
         }
     }
 }
