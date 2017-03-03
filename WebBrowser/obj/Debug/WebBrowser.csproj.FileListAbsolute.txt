@@ -1,0 +1,9 @@
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\bin\Debug\WebBrowser.exe.config
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\bin\Debug\WebBrowser.exe
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\bin\Debug\WebBrowser.pdb
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\obj\Debug\WebBrowser.csprojResolveAssemblyReference.cache
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\obj\Debug\WebBrowser.Browser.resources
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\obj\Debug\WebBrowser.Properties.Resources.resources
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\obj\Debug\WebBrowser.csproj.GenerateResource.Cache
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\obj\Debug\WebBrowser.exe
+C:\Users\giamp\Documents\MEGA\ITLA\TrabajosITLA\DCU\WebBrowser\WebBrowser\obj\Debug\WebBrowser.pdb
