@@ -29,6 +29,7 @@ namespace WebBrowser
        
         private void homeBtn_Click(object sender, EventArgs e)
         {
+            searchBar.Text = "google.com";
             webBrows.Navigate("google.com");
         }
         /// <summary>
@@ -102,6 +103,10 @@ namespace WebBrowser
         {
             searchBar.Enabled = true;
             toolStripButton6.Enabled = true;
+            if (webBrows.Url != null)
+            {
+                searchBar.Text = webBrows.Url.AbsoluteUri;
+            }
         }
         /// <summary>
         /// Dsiables some buttons on page loading
@@ -114,11 +119,7 @@ namespace WebBrowser
 
         private void webBrows_Navigating(object sender, WebBrowserNavigatingEventArgs e)
         {
-            if(webBrows.Url != null)
-            {
-                searchBar.Text = webBrows.Url.AbsoluteUri;
-                disableStuff();
-            }
+            
             
         }
     }
