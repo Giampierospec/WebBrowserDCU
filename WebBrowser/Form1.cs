@@ -111,5 +111,15 @@ namespace WebBrowser
             searchBar.Enabled = false;
             toolStripButton6.Enabled = false;
         }
+
+        private void webBrows_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            if(webBrows.Url != null)
+            {
+                searchBar.Text = webBrows.Url.AbsoluteUri;
+                disableStuff();
+            }
+            
+        }
     }
 }
