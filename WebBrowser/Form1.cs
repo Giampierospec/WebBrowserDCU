@@ -26,7 +26,7 @@ namespace WebBrowser
         /// <summary>
         /// This function returns the browser to home page
         /// </summary>
-       
+
         private void homeBtn_Click(object sender, EventArgs e)
         {
             searchBar.Text = "google.com";
@@ -35,7 +35,7 @@ namespace WebBrowser
         /// <summary>
         /// This function returns the page back
         /// </summary>
-        
+
         private void backBtn_Click(object sender, EventArgs e)
         {
             if (webBrows.CanGoBack)
@@ -46,7 +46,7 @@ namespace WebBrowser
         /// <summary>
         /// Forwards the page
         /// </summary>
-        
+
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             if (webBrows.CanGoForward)
@@ -57,7 +57,7 @@ namespace WebBrowser
         /// <summary>
         /// Refreshes the page
         /// </summary>
-        
+
         private void refreshBtn_Click(object sender, EventArgs e)
         {
             webBrows.Refresh();
@@ -65,7 +65,7 @@ namespace WebBrowser
         /// <summary>
         /// Stops the page
         /// </summary>
-        
+
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             webBrows.Stop();
@@ -73,7 +73,7 @@ namespace WebBrowser
         /// <summary>
         /// Stops the page
         /// </summary>
-        
+
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
             disableStuff();
@@ -81,14 +81,14 @@ namespace WebBrowser
             webBrows.Navigate(WebPage);
         }
 
-        
+
         /// <summary>
         /// When you hit enter it searchs the direction
         /// </summary>
-        
+
         private void searchBar_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 disableStuff();
                 string webPage = searchBar.Text.Trim();
@@ -98,13 +98,13 @@ namespace WebBrowser
         /// <summary>
         /// Checks when the page stops loading
         /// </summary>
-       
+
         private void webBrows_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             searchBar.Enabled = true;
             toolStripButton6.Enabled = true;
             PageUrl();
-            
+
         }
         /// <summary>
         /// Disables some buttons on page loading

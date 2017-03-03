@@ -56,7 +56,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStrip1.Size = new System.Drawing.Size(1040, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(888, 47);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -135,7 +135,7 @@
             this.webBrows.Location = new System.Drawing.Point(0, 47);
             this.webBrows.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrows.Name = "webBrows";
-            this.webBrows.Size = new System.Drawing.Size(1040, 530);
+            this.webBrows.Size = new System.Drawing.Size(888, 530);
             this.webBrows.TabIndex = 2;
             this.webBrows.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrows_DocumentCompleted);
             // 
@@ -143,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 577);
+            this.ClientSize = new System.Drawing.Size(888, 577);
             this.Controls.Add(this.webBrows);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
